@@ -1,16 +1,66 @@
-# React + Vite
+Lista de Mercado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto simples criado com React + Vite, que simula uma lista de mercado — semelhante a um to-do list, mas voltado para o controle de compras.
+O objetivo principal foi praticar React Hooks (useState, useEffect) e o uso do localStorage para persistência de dados.
 
-Currently, two official plugins are available:
+🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Adicionar novos itens à lista
 
-## React Compiler
+Remover itens da lista
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Armazenamento automático no localStorage
 
-## Expanding the ESLint configuration
+🧠 Objetivo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto foi desenvolvido como um treino prático para reforçar os conceitos de:
+
+Componentização no React
+
+Manipulação de estado com useState
+
+Efeitos colaterais com useEffect
+
+Persistência de dados com localStorage
+
+🛠️ Tecnologias utilizadas
+
+⚛️ React
+
+⚡ Vite
+
+🗂️ localStorage
+
+📦 Como executar o projeto
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/Lista-mercado-react.git
+
+Acesse a pasta do projeto:
+
+cd Mercado
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+Acesse no navegador:
+
+http://localhost:5173/
+
+📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, foi possível reforçar:
+
+A base da renderização reativa do React
+
+Organização de componentes
+
+Prática de estados e efeitos
+
+Armazenamento local com localStorage
