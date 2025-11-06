@@ -1,8 +1,22 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ItemLista from "./ItemLista";
 
 function App() {
-  const [listaMercado, setListaMercado] = useState(["Banana"]);
+  const getListaInicial = () => {
+    const listaSalva = localStorage.getItem("minhaListaMercado");
+
+    if (listaSalva) {
+      return JSON.parse(listaSalva);
+    }
+
+    return [];
+  };
+
+  const [listaMercado, setListaMercado] = useState(getListaInicial);
+
+  useEffect(() => {
+    localStorage.setItem("minhaListaMercado", JSON.stringify(listaMercado));
+  }, [listaMercado]);
 
   const inputAdicionar = useRef();
   console.log(inputAdicionar);
